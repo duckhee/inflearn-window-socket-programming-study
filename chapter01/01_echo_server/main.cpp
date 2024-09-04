@@ -1,6 +1,6 @@
+#include <winsock2.h>
 #include <iostream>
 #include <Windows.h>
-#include <winsock2.h>
 
 
 #pragma comment(lib, "ws2_32")
