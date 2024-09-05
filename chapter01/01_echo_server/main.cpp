@@ -83,7 +83,7 @@ int main(int argc, char **argv) {
             memset(szBuffer, '\0', sizeof(szBuffer));
         }
         /** 연결 종료 */
-        ::shutdown(hSocket, SD_BOTH);
+        ::shutdown(hClient, SD_BOTH);
         ::closesocket(hClient);
         puts("클라이언트 연결이 종료가 되었습니다.");
     }
