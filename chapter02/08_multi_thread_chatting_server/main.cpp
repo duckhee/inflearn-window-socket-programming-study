@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
     ::InitializeCriticalSection(&g_cs);
 
     /** console 에 키 이벤트 등록 */
-    if(::SetConsoleCtrlHandler((PHANDLER_ROUTINE) CtrlHandler, TRUE) == FALSE){
+    if (::SetConsoleCtrlHandler((PHANDLER_ROUTINE) CtrlHandler, TRUE) == FALSE) {
         puts("ERROR: Ctrl + C Key Event Registered Failed...");
     }
 
@@ -83,7 +83,7 @@ int main(int argc, char **argv) {
                 NULL,
                 0,
                 ClientHandler,
-                &hClient,
+                (LPVOID) hClient,
                 0,
                 &threadID
         );
