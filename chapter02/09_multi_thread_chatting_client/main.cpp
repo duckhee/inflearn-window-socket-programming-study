@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
         }
         ::send(hClientSocket, pszBuffer, strlen(pszBuffer) + 1, 0);
     }
-//    ::shutdown(hClientSocket, SD_BOTH);
+    ::shutdown(hClientSocket, SD_BOTH);
     ::closesocket(hClientSocket);
     ::Sleep(100);
     WSACleanup();
