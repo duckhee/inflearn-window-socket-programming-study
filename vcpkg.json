@@ -1,0 +1,21 @@
+{
+  "name" : "inflearn-window-socket-programming-study",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "98aa6396292d57e737a6ef999d4225ca488859d5",
+  "dependencies" : [ {
+    "name" : "vcpkg-cmake-config",
+    "version>=" : "2024-05-23"
+  }, {
+    "name" : "vcpkg-cmake-get-vars",
+    "version>=" : "2023-12-31"
+  }, {
+    "name" : "vcpkg-cmake",
+    "version>=" : "2024-04-23"
+  }, {
+    "name" : "vcpkg-pkgconfig-get-modules",
+    "version>=" : "2024-04-03"
+  }, {
+    "name" : "vcpkg-tool-meson",
+    "version>=" : "1.5.1"
+  } ]
+}
