@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <fcntl.h>
 
-#define BUFFER_MAX                         1024 * 6
+#define BUFFER_MAX                         1024 * 64
 #define PATH_BUFFER_SIZE                   1024
 
 void ErrorHandler(const char *message) {
