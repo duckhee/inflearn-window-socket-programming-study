@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
 
     while ((nReceive = ::recv(hSocket, byBuffer, BUFFER_MAX, 0)) > 0) {
         fwrite(byBuffer, nReceive, 1, fp);
-        puts("#");
+        putchar('#');
     }
 
     fclose(fp);
