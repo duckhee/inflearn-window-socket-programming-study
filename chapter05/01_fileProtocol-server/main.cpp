@@ -76,7 +76,9 @@ int main(int argc, char **argv) {
                 }
         }
     }
-
+    closesocket(hClient);
+    closesocket(hSocket);
+    ::WSACleanup();
     return 0;
 }
 
