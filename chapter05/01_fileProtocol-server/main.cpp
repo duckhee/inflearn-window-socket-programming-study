@@ -74,6 +74,7 @@ int main(int argc, char **argv) {
                     ::recv(hClient, (char *) &file, sizeof(file), 0);
                     SendFile(hClient, file.nIndex);
                 }
+                break;
         }
     }
     closesocket(hClient);
