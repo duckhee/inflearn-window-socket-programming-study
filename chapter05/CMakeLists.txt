@@ -2,3 +2,4 @@ cmake_minimum_required(VERSION 3.27)
 
 add_subdirectory(01_fileProtocol-server)
 add_subdirectory(02_fileProtocol-client)
+add_subdirectory(03_fileAsyncCallback)
