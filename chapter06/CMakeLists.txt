@@ -1,3 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
 
 add_subdirectory(01_udpSendReceive)
+add_subdirectory(02_broadCastSender)
+add_subdirectory(03_broadCastReceiver)
