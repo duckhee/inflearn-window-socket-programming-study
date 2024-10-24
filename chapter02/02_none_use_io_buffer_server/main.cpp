@@ -20,6 +20,12 @@ int main(int argc, char **argv) {
         cout << "Failed Socket Created..." << endl;
         return -1;
     }
+
+    /** socket의 옵션 변경 */
+    int nOpt = 1;
+    /** TCP 전송에 Delay 주지 않기 위한 TCP 수준의 설정 */
+    ::setsockopt(hServerSocket, IPPROTO_TCP, TCP_NODELAY, (char *) &nOpt, sizeof(nOpt));
+
     SOCKADDR_IN serverInfo = {0,};
     serverInfo.sin_addr.S_un.S_addr = htonl(INADDR_ANY);
     serverInfo.sin_port = htons(25000);
